@@ -77,10 +77,14 @@ nav{
   }
 
   main{
-    height: 100vh;
+    height: 100%;
     // grid-template-columns: 3fr 1fr;
   }
 
   h1{
     font-size: 35px;
+  }
+
+  .clickableBox:hover{
+    cursor: pointer;
   }

@@ -32,15 +32,29 @@
 
 <main style="color: white">
 
+  <div (click)="togglePoster()" class="clickableBox" >
   <form class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 500px; text-align: center; height: 80px; margin: auto; margin-top: 30px;">
       <h2>Poster</h2>
   </form>
+</div>
 
+  <form *ngIf="showPoster" class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 525px; margin: auto; margin-top: 10px;">
+  <img
+        alt="Plakat"
+        src="../../assets/Screenshots/plakat.png"
+        width="492"
+        height="800"
+        class="inline-block"
+      />
+    </form>
+
+    <div (click)="toggleScreenshots()" class="clickableBox" >
   <form class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 500px; text-align: center; height: 80px; margin: auto; margin-top: 30px;">
     <h2>Screenshots</h2>
 </form>
+</div>
 
-<form class="rounded shadow-lg p-3" style="margin-top: 10px; background-color: rgba(0, 0, 0, 0.6); color: white">
+<form *ngIf="showScreenshots" class="rounded shadow-lg p-3" style="margin-top: 10px; background-color: rgba(0, 0, 0, 0.6); color: white">
 <img
           alt="Screenshot der Website"
           src="../../assets/Screenshots/login.png"
@@ -90,11 +104,13 @@
       />
   </form>
 
+  <div (click)="toggleVideo()" class="clickableBox" >
 <form class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 500px; text-align: center; height: 80px; margin: auto; margin-top: 30px;">
   <h2>Video</h2>
 </form>
+</div>
 
-<div class="video" style="text-align: center; margin-top: 10px;">
+<div *ngIf="showVideo" class="video" style="text-align: center; margin-top: 10px;">
 <youtube-player videoId="dQw4w9WgXcQ"> </youtube-player>
 </div>
 
