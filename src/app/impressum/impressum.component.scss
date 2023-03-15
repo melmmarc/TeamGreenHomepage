@@ -7,10 +7,10 @@
 
 .wholeBox {
     position: relative;
-    transform: translateY(15%);
+    transform: translateY(10%);
   }
 
-  // NAV-BAR
+// NAV-BAR
 
 nav{
   display: flex;
@@ -57,7 +57,7 @@ a{
 }
 
 .nav-kasten5{
-  text-align: center;
+  text-align: right;
   width: 14%;
   margin-top: 22px;
 }
@@ -65,7 +65,7 @@ a{
 .nav-kasten6{
   height: 100%;
   width: 10%;
-  text-align: center;
+  text-align: right;
   margin-top: 22px;
 }
 
@@ -75,6 +75,16 @@ a{
   text-align: right;
   margin-top: 15px;
   text-align: right;
+}
+
+.logoutText:hover{
+cursor: pointer;
+}
+
+main{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1fr;
 }
 
 h1{
