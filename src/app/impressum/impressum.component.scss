@@ -7,7 +7,8 @@
 
 .wholeBox {
     position: relative;
-    transform: translateY(3%);
+    transform: translateY(25%);
+    margin: auto;
   }
 
 // NAV-BAR
@@ -22,10 +23,6 @@ nav{
 
 a{
   text-decoration: none;
-}
-
-.settingsIcon:hover{
-  cursor: pointer;
 }
 
 .nav-kasten1{
@@ -77,16 +74,11 @@ a{
   text-align: right;
 }
 
-.logoutText:hover{
-cursor: pointer;
-}
-
 main{
-  display: grid;
   height: 100vh;
-  // grid-template-columns: 3fr 1fr;
 }
 
 h1{
   font-size: 35px;
 }
+
