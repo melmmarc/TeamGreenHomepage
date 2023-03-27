@@ -17,6 +17,8 @@ export class HomeComponent {
   togglePoster(): void{
     if(this.showPoster === false){
       this.showPoster = true;
+      this.showScreenshots = false;
+      this.showVideo = false;
     }
     else{
       this.showPoster = false;
@@ -26,6 +28,8 @@ export class HomeComponent {
   toggleScreenshots(): void{
     if(this.showScreenshots === false){
       this.showScreenshots = true;
+      this.showPoster = false;
+      this.showVideo = false;
     }
     else{
       this.showScreenshots = false;
@@ -35,6 +39,8 @@ export class HomeComponent {
   toggleVideo(): void{
     if(this.showVideo === false){
       this.showVideo = true;
+      this.showPoster = false;
+      this.showScreenshots = false;
     }
     else{
       this.showVideo = false;
