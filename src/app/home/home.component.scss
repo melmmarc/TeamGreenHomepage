@@ -12,10 +12,6 @@ nav{
     text-decoration: none;
   }
   
-  .settingsIcon:hover{
-    cursor: pointer;
-  }
-  
   .nav-kasten1{
     height: 100%;
     width: 4%;
@@ -66,10 +62,6 @@ nav{
     text-align: right;
   }
   
-  .logoutText:hover{
-  cursor: pointer;
-  }
-  
   .wholePage{
     width: 100vw;
     height: 100vh;
@@ -78,11 +70,14 @@ nav{
   }
 
   main{
-    display: grid;
     height: 100vh;
     // grid-template-columns: 3fr 1fr;
   }
 
   h1{
     font-size: 35px;
+  }
+
+  .clickableBox:hover{
+    cursor: pointer;
   }

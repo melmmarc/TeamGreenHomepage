@@ -21,7 +21,7 @@
           <h1>Team Green</h1>
         </div>
         <div class="nav-kasten5 nav-kasten">
-          <a href="galerie" class="fw-bold text-decoration-none" style="color: white">Galerie</a>
+          
         </div>
         <div class="nav-kasten6 nav-kasten">
           <a href="team" class="fw-bold text-decoration-none" style="color: white">Das Team</a>
@@ -37,18 +37,90 @@
         </div>
   </nav>
   
-  <main>
+  <main style="color: white">
 
-<div style="text-align: center; margin-top: 20px;">
+    <div (click)="togglePoster()" class="clickableBox" >
+    <form class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 500px; text-align: center; height: 80px; margin: auto; margin-top: 30px;">
+        <h2>Poster</h2>
+    </form>
+  </div>
+  
+    <form *ngIf="showPoster" class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 525px; margin: auto; margin-top: 10px;">
     <img
-            alt="MissionGreenPossibleLogo"
-            src="../../assets/Images/MissionGreenPossible_Logo.png"
-            width="800"
-            height="300"
+          alt="Plakat"
+          src="../../assets/Screenshots/plakat.png"
+          width="492"
+          height="800"
+          class="inline-block"
+        />
+      </form>
+  
+      <div (click)="toggleScreenshots()" class="clickableBox" >
+    <form class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 500px; text-align: center; height: 80px; margin: auto; margin-top: 30px;">
+      <h2>Screenshots</h2>
+  </form>
+  </div>
+  
+  <form *ngIf="showScreenshots" class="rounded shadow-lg p-3" style="margin-top: 10px; background-color: rgba(0, 0, 0, 0.6); color: white">
+  <img
+            alt="Screenshot der Website"
+            src="../../assets/Screenshots/login.png"
+            width="492"
+            height="280"
             class="inline-block"
           />
-</div>
-    
+  
+          <img
+            alt="Screenshot der Website"
+            src="../../assets/Screenshots/newpassword.png"
+            width="492"
+            height="280"
+            class="inline-block"
+          />
+  
+          <img
+            alt="Screenshot der Website"
+            src="../../assets/Screenshots/startseite.png"
+            width="492"
+            height="280"
+            class="inline-block"
+          />
+  
+          <img
+          alt="Screenshot der Website"
+          src="../../assets/Screenshots/pinboard.png"
+          width="492"
+          height="280"
+          class="inline-block"
+        />
+  
+        <img
+          alt="Screenshot der Website"
+          src="../../assets/Screenshots/dialog.png"
+          width="492"
+          height="280"
+          class="inline-block"
+        />
+  
+        <img
+          alt="Screenshot der Website"
+          src="../../assets/Screenshots/feedback.png"
+          width="492"
+          height="280"
+          class="inline-block"
+        />
+    </form>
+  
+    <div (click)="toggleVideo()" class="clickableBox" >
+  <form class="rounded shadow-lg p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; width: 500px; text-align: center; height: 80px; margin: auto; margin-top: 30px;">
+    <h2>Video</h2>
+  </form>
+  </div>
+  
+  <div *ngIf="showVideo" class="video" style="text-align: center; margin-top: 10px;">
+  <youtube-player videoId="dQw4w9WgXcQ"> </youtube-player>
+  </div>
+  
   </main>
   
   </div>
